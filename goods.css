@@ -59,32 +59,32 @@ table {
     --Primary400:#57A203;
 }
 body{
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans TC",sans-serif;
     letter-spacing: 0.8px;
 }
-h1{
+.h1{
     font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
     color: var(--Neutral900);
 }
-h2{
+.h2{
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
 }
-h3{
+.h3{
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
 }
-h4{
+.h4{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     color: var(--Neutral900);
 }
-p{
+.p{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -143,17 +143,26 @@ img{
     line-height: 1.2;
     font-weight: 700;
 }
+.button {
+    font-family: "Noto Sans TC";
+    cursor: pointer; /*游標移上去變指的手勢*/
+    border: none;
+    background-color: transparent; /*背景色透明*/
+}
 
-
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
 
 .navbar{
-    max-width: 1920px;
-    margin: 0 auto;
-
     display: flex;
     justify-content: space-between;
-    padding: 16px 312px;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
+
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .navbar ul{
     display: flex;
@@ -163,6 +172,9 @@ img{
     position: relative;
     padding: 8px 12px;
     margin-right: 48px;
+}
+.logo a{
+    position: relative;
 }
 .logo .logo-text{
     font-family: mina;
@@ -182,8 +194,8 @@ img{
     background-color: #c0fa73;
 
     position: absolute;
-    top: 11px;
-    right: 11px;
+    top: 15px;
+    right: 0px;
     z-index: 0;
 }
 .navbar li a{
@@ -201,10 +213,6 @@ img{
     color: #212529;
     font-size: 24px;
     line-height: 1;
-}
-.container{
-    max-width: 1296px;
-    margin: 0 auto;
 }
 .product-images{
     flex-wrap: wrap;
@@ -255,7 +263,9 @@ img{
     padding-right: 30px;
 }
 .size-button .button{
+    width: 160px;
     padding: 12px 24px;
+    text-align: center;
     border: 1px solid var(--Neutral300);
     border-radius: 4px;
 }
@@ -318,8 +328,6 @@ img{
 
 
 .section{
-    max-width: 1920px;
-    margin: 0 auto;
     padding-top: 48px;
 }
 .banner{
@@ -340,19 +348,20 @@ img{
 .banner button h4{
     color: #FFFFFF;
 }
-footer{
-    max-width: 1920px;
-    margin: 0 auto;
-}
 .footer{
     background: #F8F9FA;
     padding: 64px 312px;
 }
 .footer-container{
     max-width: 1296px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.footer-container .logo .dot{
+    top: 11px;
+    right: 11px;
 }
 .footer-container ul{
     display: flex;
@@ -368,13 +377,9 @@ footer{
 }
 .copyright{
     max-width: 1296px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    margin: 0 auto;
+    text-align: center;
 
     border-top: 1px solid var(--Neutral300);
     padding-top: 32px;
-}
-.copyright-content{
-    text-align: center;
 }

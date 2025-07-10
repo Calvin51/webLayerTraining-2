@@ -52,25 +52,25 @@ table {
     box-sizing: border-box;
 }
 body{
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans TC", sans-serif;
     letter-spacing: 0.8px;
 }
-li{
+.li{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
 }
-h1{
+.h1{
     font-size: 28px;
     font-weight: 700;
     line-height: 1.2;
 }
-h2{
+.h2{
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
 }
-h4{
+.h3{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -81,6 +81,12 @@ a{
 }
 a:hover{
     background-color: #F8F9FA;
+}
+.button {
+    font-family: "Noto Sans TC";
+    cursor: pointer; /*游標移上去變指的手勢*/
+    border: none;
+    background-color: transparent; /*背景色透明*/
 }
 .bold{
     font-weight: 700;
@@ -103,15 +109,17 @@ a:hover{
 .mb-16{
     margin-bottom: 16px;
 }
-
-.navbar{
-    max-width: 1920px;
+.navbar-container{
+    max-width: 1296px;
     margin: 0 auto;
-
+    margin-bottom: 64px;
+}
+.navbar{
     display: flex;
     justify-content: space-between;
-    padding: 16px 312px;
-    margin-bottom: 32px;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .navbar ul{
     display: flex;
@@ -121,6 +129,9 @@ a:hover{
     position: relative;
     padding: 8px 12px;
     margin-right: 48px;
+}
+.logo a{
+    position: relative;
 }
 .logo .logo-text{
     font-family: mina;
@@ -140,8 +151,8 @@ a:hover{
     background-color: #c0fa73;
 
     position: absolute;
-    top: 11px;
-    right: 11px;
+    top: 15px;
+    right: 0px;
     z-index: 0;
 }
 .navbar li a{
@@ -196,11 +207,12 @@ a:hover{
     display: flex;
 }
 .content .product-list{
+    max-width: 196px;
     padding-right: 24px;
 }
 .product-list li a{
     display: block;
-    max-width: 172px;
+    width: 172px;
 
     font-size: 16px;
     font-weight: 500;
@@ -208,6 +220,9 @@ a:hover{
     color: #212529;
     padding-top: 12px;
     padding-bottom: 12px;
+}
+.product-list .focus a{
+    color: #57A203;
 }
 .product-list li a:hover{
     background-color: #F8F9FA;
@@ -262,8 +277,6 @@ a:hover{
     font-size: 20px;
 }
 .section{
-    max-width: 1920px;
-    margin: 0 auto;
     padding-top: 48px;
 }
 .banner{
@@ -282,19 +295,20 @@ a:hover{
     border-radius: 4px;
     padding: 12px 24px;
 }
-footer{
-    max-width: 1920px;
-    margin: 0 auto;
-}
 .footer{
     background: #F8F9FA;
     padding: 64px 312px;
 }
 .footer-container{
     max-width: 1296px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.footer-container .logo .dot{
+    top: 11px;
+    right: 11px;
 }
 .footer-container ul{
     display: flex;
@@ -310,13 +324,15 @@ footer{
 }
 .copyright{
     max-width: 1296px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    margin: 0 auto;
+    text-align: center;
 
     border-top: 1px solid #DEE2E6;
     padding-top: 32px;
 }
-.copyright-content{
-    text-align: center;
+.copyright-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--Neutral900);
 }
