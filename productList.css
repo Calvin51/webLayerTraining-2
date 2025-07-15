@@ -236,6 +236,8 @@ a:hover{
 }
 .product-menu{
     max-width: 1076px;
+    margin-left: -12px;
+    margin-right: -12px;
 }
 .product-cards{
     display: flex;

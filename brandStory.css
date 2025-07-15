@@ -1,0 +1,449 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root{
+    --Neutral300:#DEE2E6;
+    --Neutral500:#ADB5BD;
+    --Neutral600:#6C757D;
+    --Neutral900:#212529;
+    --Primary400:#57A203;
+}
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: var(--Neutral900);
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+img {
+  display: block;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+a:hover{
+    background-color: var(--Neutral300);
+}
+.h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .h3-sm{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .h5-sm{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+.mr-40 {
+  margin-right: 40px;
+}
+.mr-48 {
+  margin-right: 48px;
+}
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.py-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.py-151 {
+  padding-top: 151px;
+  padding-bottom: 151px;
+}
+.bd-b-1 {
+  border-bottom: 1px solid var(--Neutral300);
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+
+.navbar-container {
+  max-width: 1320px;
+  margin: 0 auto;   
+}
+.logo{
+  position: relative;
+}
+.logo a{
+  position: relative;
+  padding: 8px 12px;
+}
+.logo .logo-text{
+  font-family: mina;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.704px;
+  color: var(--Neutral900);
+
+  position: relative;
+  z-index: 1;
+}
+.logo .dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #c0fa73;
+
+  position: absolute;
+  top: 12px;
+  right: 11px;
+  z-index: 0;
+}
+.navbar-container ul li a{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--Neutral900);
+}
+.account a {
+  padding: 12px;
+}
+.account a i{
+  color: var(--Neutral900);
+  font-size: 24px;
+  line-height: 1;
+}
+.header {
+  /* background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  position: relative;
+
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+.header .bg {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+}
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 178px;
+  height: auto;
+  color: white;
+  text-align: center;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section-container {
+  max-width: 856px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.block-quote {
+  background: #f5fee7;
+  text-align: center;
+
+  padding: 32px;
+  /* margin-bottom: 48px; */
+}
+.block-quote h5 {
+  color: var(--Primary400);
+  /* margin-bottom: 12px; */
+}
+.brand-intro {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.brand-intro .main-image {
+  max-width: 100%;
+  height: auto;
+  /* margin-bottom: 24px; */
+}
+.brand-intro-content h5 {
+  color: var(--Primary400);
+}
+.brand-history ol li .span {
+  padding-left: 8px;
+  margin-left: 8px;
+  border-left: 1px solid var(--Neutral900);
+}
+.brand-concept li {
+  padding-left: 12px;
+  border-left: 3px solid var(--Neutral300);
+}
+.brand-story a {
+  color: var(--Primary400);
+  font-weight: 500;
+}
+.brand-story a i {
+  font-size: 20px;
+}
+.brand-story a span {
+  font-size: 16px;
+  border-bottom: 1px solid var(--Primary400);
+  padding-bottom: 4px;
+  margin-left: 8px;
+}
+
+.section{
+  padding-top: 16px;
+}
+.banner{
+  background-color: #E8FEC5;
+}
+.banner button{
+  color: #FFFFFF;
+  background-color: var(--Neutral900);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+.footer{
+  background: #F8F9FA;
+}
+.footer-container{
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.footer-container ul li a{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--Neutral900);
+}
+.copyright{
+  max-width: 1296px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #DEE2E6;
+  padding-top: 32px;
+}
+.copyright-content .p{
+  font-size: 14px;
+  color: var(--Neutral600);
+}
+
+/* RWD */
+@media (max-width: 576px) {
+    .d-sm-none{
+      display: none;
+    }
+    .d-sm-block {
+      display: block;
+    }
+    .flex-sm-column {
+      flex-direction: column;
+    }
+    .justify-sm-start {
+      justify-content: flex-start;
+    }
+    .align-sm-start {
+      align-items: flex-start;
+    }
+    .p-sm-24 {
+      padding: 24px;
+    }
+    .px-sm-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .px-sm-12 {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .py-sm-32 {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    .mr-sm-0 {
+      margin-right: 0;
+    }
+    .mr-sm-16 {
+      margin-right: 16px;
+    }
+    .mb-sm-8 {
+      margin-bottom: 8px;
+    }
+    .mb-sm-12 {
+      margin-bottom: 12px;
+    }
+    .mb-sm-16 {
+      margin-bottom: 16px;
+    }
+    .mb-sm-32 {
+      margin-bottom: 32px;
+    }
+    .header {
+      margin-bottom: 32px;
+    }
+    .header .bg {
+      filter: brightness(0.6);
+      /* 降低40%亮度 */  
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .section-container {
+      margin-bottom: 32px;
+    }
+    .block-quote {
+      margin: 0 auto;
+      padding: 24px;
+      text-align: left;
+    }
+    .section {
+      padding-top: 0px;
+    }
+    .banner button {
+      padding: 8px 16px;
+    }
+}
