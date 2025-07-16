@@ -349,7 +349,9 @@ a:hover{
   background: #F8F9FA;
 }
 .footer-container{
-  max-width: 1296px;
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin: 0 auto;
   margin-bottom: 24px;
 }

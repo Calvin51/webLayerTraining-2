@@ -11,117 +11,127 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-container">
-        <ul>
-            <li class="logo">
-                <a href="./index.html">
+    <nav class="navbar navbar-container d-flex justify-between align-center px-12 py-16 p-sm-12">
+        <ul class="d-flex align-center">
+            <li class="logo mr-48">
+                <a href="./index.html" class="px-12 py-8">
                     <span class="logo-text">URBNSTEP</span>
                     <div class="dot"></div>     
                 </a>  
             </li>
-            <li class="mr-40 d-none"><a href="#">商品列表</a></li>
-            <li class="d-none"><a href="#">品牌故事</a></li>
+            <li class="li mr-40 d-sm-none"><a href="./productList.html" class="py-12">商品列表</a></li>
+            <li class="li d-sm-none"><a href="./brandStory.html" class="py-12">品牌故事</a></li>
         </ul>
         <div class="account">
             <a href="#"><i class="bi bi-person"></i></a>
         </div>
     </nav>
-    <main class="container">
-        <ul class="title-bar mb-24">
-            <li class="bar-left li"><a href="#">首頁</a></li>
-            <li class="bar-middle li">/</li>
-            <li class="bar-right li"><a href="#">所有商品</a></li>
+    <main class="container px-12">
+        <ul class="title-bar d-flex mb-24">
+            <li class="bar-left li li-sm"><a href="#" class="mr-12 mr-sm-8">首頁</a></li>
+            <li class="bar-middle li li-sm mr-12 mr-sm-8">/</li>
+            <li class="bar-left li li-sm"><a href="#" class="mr-12 mr-sm-8">女鞋</a></li>
+            <li class="bar-middle li li-sm mr-12 mr-sm-8">/</li>
+            <li class="bar-right li li-sm"><a href="#">所有商品</a></li>
         </ul>
-        <div class="title mb-24">
-            <h1 class="h1">所有商品</h1>
+        <div class="title mb-24 py-7">
+            <h1 class="h1 h2-sm">女鞋</h1>
         </div>
-        <div class="content">
-            <ul class="product-list mr-24">
+        <div class="content d-flex row row-sm">
+            <ul class="product-list col-2 d-sm-none">
                 <li class="mb-16 li focus"><a href="#">所有商品</a></li>
                 <li class="mb-16 li"><a href="#">慢跑鞋</a></li>
                 <li class="mb-16 li"><a href="#">滑板鞋</a></li>
                 <li class="mb-16 li"><a href="#">厚底鞋</a></li>
                 <li class="li"><a href="#">限定 / 聯名企劃</a></li>
             </ul>
-            <div class="product-menu">
-                <ul class="product-cards">
-                    <li class="card mr-24 li li">
+            <div class="product-menu col-10 px-12 col-sm-12 px-sm-6 mb-sm-16">
+                <ul class="product-cards d-flex row row-sm">
+                    <li class="card li col-4 col-sm-6">
                         <a href="./goodsDetail.html">
                            <div class="image">
                                 <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product.png?raw=true" alt="">
                             </div>
                             <div class="label">
-                                <h3 class="bold h3">PLATFORM 404</h3>
+                                <h3 class="bold bold-sm h3">PLATFORM 404</h3>
                                 <h3 class="h3">NT$2,600 </h3>
                             </div> 
                         </a>                        
                     </li>
-                    <li class="card mr-24 li">
+                    <li class="card li col-4 col-sm-6">
                         <div class="image">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-1.png?raw=true" alt=""></div>
                         <div class="label">
-                            <h3 class="bold h3">PLATFORM 404</h3>
+                            <h3 class="bold bold-sm h3">PLATFORM 404</h3>
                             <h3 class="h3">NT$2,600</h3>
                         </div>
                     </li>
-                    <li class="card li">
+                    <li class="card li col-4 col-sm-6">
                         <div class="image">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true" alt=""></div>
                         <div class="label">
-                            <h3 class="bold h3">VM001</h3>
+                            <h3 class="bold bold-sm h3">VM001</h3>
                             <h3 class="h3">NT$2,600</h3>
                         </div>
                     </li>
-                    <li class="card mr-24 li">
+                    <li class="card li col-4 col-sm-6">
                         <div class="image">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true" alt=""></div>
                         <div class="label">
-                            <h3 class="bold h3">Melty Kiss</h3>
+                            <h3 class="bold bold-sm h3">Melty Kiss</h3>
                             <h3 class="h3">NT$4,000</h3>
                         </div>
                     </li>
-                    <li class="card mr-24 li">
+                    <li class="card li col-4 col-sm-6">
                         <div class="image">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true" alt=""></div>
                         <div class="label">
-                            <h3 class="bold h3">BOOMBLOK</h3>
+                            <h3 class="bold bold-sm h3">BOOMBLOK</h3>
                             <h3 class="h3">NT$3,200</h3>
                         </div>
                     </li>
-                    <li class="card li">
+                    <li class="card li col-4 col-sm-6">
                         <div class="image">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-5.png?raw=true" alt=""></div>
                         <div class="label">
-                            <h3 class="bold h3">BOOMBLOK</h3>
+                            <h3 class="bold bold-sm h3">BOOMBLOK</h3>
                             <h3 class="h3">NT$3,200</h3>
                         </div>
                     </li>
-                    <li class="card mr-24 li">
+                    <li class="card li col-4 col-sm-6">
                         <div class="image">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-6.png?raw=true" alt=""></div>
                         <div class="label">
-                            <h3 class="bold h3">R:UNER</h3>
+                            <h3 class="bold bold-sm h3">R:UNER</h3>
                             <h3 class="h3">NT$4,000</h3>
                         </div>
                     </li>
-                    <li class="card mr-24 li">
+                    <li class="card li col-4 col-sm-6">
                         <div class="image">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true" alt=""></div>
                         <div class="label">
-                            <h3 class="bold h3">Sugar Snap</h3>
+                            <h3 class="bold bold-sm h3">Sugar Snap</h3>
                             <h3 class="h3">NT$4,000</h3>
                         </div>
                     </li>
-                    <li class="card li">
+                    <li class="card li col-4 col-sm-6">
                         <div class="image">
                             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-8.png?raw=true" alt=""></div>
                         <div class="label">
-                            <h3 class="bold h3">Neofoam</h3>
+                            <h3 class="bold bold-sm h3">Neofoam</h3>
+                            <h3 class="h3">NT$4,000</h3>
+                        </div>
+                    </li>
+                    <li class="card li col-4 col-sm-6 d-none d-sm-block">
+                        <div class="image">
+                            <img src="https://github.com/Fury51/img-base/blob/main/%E5%9C%96%E5%BA%AB/Product-Card.png?raw=true" alt=""></div>
+                        <div class="label">
+                            <h3 class="bold bold-sm h3">Buttermood</h3>
                             <h3 class="h3">NT$4,000</h3>
                         </div>
                     </li>
                 </ul>
-                <ul class="pages">
+                <ul class="pages d-flex justify-center mt-sm-8">
                         <li class="mr-12 li"><a href="#"><i class="bi bi-chevron-left"></i></a></li>
                         <li class="mr-8 li"><a href="#" class="page">1</a></li>
                         <li class="mr-8 li"><a href="#" class="page">2</a></li>
@@ -134,28 +144,30 @@
         </div>
     </main>
     <section class="section">
-        <div class="banner">
-            <h2 class="mr-24 h2">加入會員取得 9 折優惠</h2>
+        <div class="banner d-flex justify-center align-center py-24">
+            <h2 class="mr-24 h2 h3-sm mr-sm-16">加入會員取得 9 折優惠</h2>
             <button type="button" class="button">
-                <h3 class="h3">馬上註冊</h3>
+                <h3 class="h3 h4-sm">馬上註冊</h3>
             </button>
         </div>
     </section>
     <footer>
-        <div class="footer">
-           <div class="footer-container mb-24">
-                <div class="logo">
-                    <span class="logo-text">URBNSTEP</span>
-                    <div class="dot"></div>
+        <div class="footer py-64 py-sm-32 px-sm-12">
+           <div class="footer-container d-flex justify-between align-center flex-sm-column justify-sm-start align-sm-start px-12 px-sm-0">
+                <div class="logo mb-sm-8">
+                    <a href="./index.html" class="px-12 py-8">
+                        <span class="logo-text">URBNSTEP</span>
+                        <div class="dot"></div>
+                    </a>
                 </div>
-                <ul>
-                    <li class="mr-40"><a href="#">商品列表</a></li>
-                    <li><a href="#">品牌故事</a></li>
+                <ul class="d-flex flex-sm-column">
+                    <li class="li mr-40 mr-sm-0 px-sm-12"><a href="./productList.html" class="py-12">商品列表</a></li>
+                    <li class="li px-sm-12"><a href="./brandStory.html" class="py-12">品牌故事</a></li>
                 </ul>
             </div>
             <div class="copyright">
                 <div class="copyright-content">
-                    <p>Copyright ©2025 URBNSTYLE</p>
+                    <p class="mb-4">Copyright ©2025 URBNSTYLE</p>
                     <p>All Rights Reserved.</p>    
                 </div>
                 
