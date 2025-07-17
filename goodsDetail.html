@@ -11,144 +11,158 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav class="navbar container">
-        <ul>
-            <li class="logo">
-                <a href="./index.html">
+    <nav class="navbar container d-flex justify-between align-center px-12 py-16 p-sm-12">
+        <ul class="d-flex align-center">
+            <li class="logo mr-48">
+                <a href="./index.html" class="px-12 py-8">
                     <span class="logo-text">URBNSTEP</span>
                     <div class="dot"></div>
                 </a>
             </li>
-            <li class="mr-40"><a href="./productList.html">商品列表</a></li>
-            <li><a href="./brandStory.html">品牌故事</a></li>
+            <li class="mr-40 d-sm-none"><a href="./productList.html" class="py-12">商品列表</a></li>
+            <li class="d-sm-none"><a href="./brandStory.html" class="py-12">品牌故事</a></li>
         </ul>
         <div class="account">
             <a href="#"><i class="bi bi-person"></i></a>
         </div>
     </nav>
 
-    <main class="container d-flex">
-        <div class="product-images d-flex mr-24">
-            <div class="image-box mr-8 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image.png?raw=true" alt=""></div>
-            <div class="image-box mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-1.png?raw=true" alt=""></div>
-            <div class="image-box mr-8 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-2.png?raw=true" alt=""></div>
-            <div class="image-box mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-3.png?raw=true" alt=""></div>
-            <div class="image-box mr-8 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-4.png?raw=true" alt=""></div>
-            <div class="image-box mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-5.png?raw=true" alt=""></div>
-            <div class="image-box mr-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-6.png?raw=true" alt=""></div>
-            <div class="image-box"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-7.png?raw=true" alt=""></div>
-        </div>
-        <div class="product-info">
-            <div class="product-intro mb-32">
-                <ul class="d-flex mb-12">
-                    <li class="mr-12">首頁</li>
-                    <li class="n300 mr-12">/</li>
-                    <li class="mr-12">女鞋</li>
-                    <li class="n300 mr-12">/</li>
-                    <li class="mr-12">滑板鞋</li>
-                    <li class="n300 mr-12">/</li>
-                    <li class="n900">Platform 404</li>
-                </ul>
-                <h1 class="mb-16 h1">Platform 404</h1>
-                <div class="product-price d-flex mb-16">
-                    <h3 class="mr-8 h3">NT$2,600</h3>
-                    <p class="sm p">NT$3,200</p>
-                </div>
-                <div class="product-intro-content">
-                    <p class="mb-12 p">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
-                    <p class="p">鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
-                </div>
+    <main class="mb-64 mb-sm-0">
+        <div class="d-none d-sm-block mb-sm-24">
+            <div class="image-box">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image.png?raw=true" alt="">
             </div>
-            <div class="select-color-size mb-32">
-                <div class="select mb-48">
-                    <div class="select-color">
-                        <p class="mb-8 p">顏色</p>
-                        <div class="color-button d-flex">
-                            <div class="button mr-8">
-                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image.png?raw=true" alt="" class="mb-4">
-                                <h4 class="h4">藍色</h4>
+        </div>
+        <div class="container px-12">
+            <div class="row d-flex flex-sm-column">
+                <div class="product-images col-7 d-sm-none">
+                    <div class="aside-row d-flex flex-wrap">
+                        <div class="image-box aside-col-6 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image.png?raw=true" alt="shoes"></div>
+                        <div class="image-box aside-col-6 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-1.png?raw=true" alt="shoes"></div>
+                        <div class="image-box aside-col-6 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-2.png?raw=true" alt="shoes"></div>
+                        <div class="image-box aside-col-6 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-3.png?raw=true" alt="shoes"></div>
+                        <div class="image-box aside-col-6 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-4.png?raw=true" alt="shoes"></div>
+                        <div class="image-box aside-col-6 mb-8"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-5.png?raw=true" alt="shoes"></div>
+                        <div class="image-box aside-col-6"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-6.png?raw=true" alt="shoes"></div>
+                        <div class="image-box aside-col-6"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-7.png?raw=true" alt="shoes"></div>
+                    </div>
+                </div>
+                <div class="product-info col-5 col-sm-12">
+                    <div class="product-intro mb-32">
+                        <ul class="d-flex mb-12 mb-sm-8">
+                            <li class="mr-12">首頁</li>
+                            <li class="n300 mr-12">/</li>
+                            <li class="mr-12">女鞋</li>
+                            <li class="n300 mr-12">/</li>
+                            <li class="mr-12">滑板鞋</li>
+                            <li class="n300 mr-12">/</li>
+                            <li class="n900">Platform 404</li>
+                        </ul>
+                        <h1 class="mb-16 h1 h2-sm mb-sm-12">Platform 404</h1>
+                        <div class="product-price d-flex align-center mb-16 mb-sm-12">
+                            <h3 class="mr-8 h3 h4-sm">NT$2,600</h3>
+                            <p class="sm p">NT$3,200</p>
+                        </div>
+                        <div class="product-intro-content">
+                            <p class="mb-12 p">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
+                            <p class="p">鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
+                        </div>
+                    </div>
+                    <div class="select-color-size mb-32">
+                        <div class="select mb-48 mb-sm-24">
+                            <div class="select-color mb-32 mb-sm-24">
+                                <p class="mb-8 p">顏色</p>
+                                <div class="color-button d-flex">
+                                    <div class="button mr-8">
+                                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image.png?raw=true" alt="" class="mb-4">
+                                        <h4 class="h4">藍色</h4>
+                                    </div>
+                                    <div class="button">
+                                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-1.png?raw=true" alt="" class="mb-4">
+                                        <h4 class="h4">卡其色</h4>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="button">
-                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-1.png?raw=true" alt="" class="mb-4">
-                                <h4 class="h4">卡其色</h4>
+                            <div class="select-size">
+                                <p class="mb-8 p">尺寸</p>
+                                <div class="size-button d-flex flex-wrap gap-8 mb-8">
+                                    <button type="button" class="button focus">
+                                        <h4 class="h4">35(22.5cm)</h4>
+                                    </button>
+                                    <button type="button" class="button">
+                                        <h4 class="h4">36(23.0cm)</h4>
+                                    </button>
+                                    <button type="button" class="button">
+                                        <h4 class="h4">37(23.5cm)</h4>
+                                    </button>
+                                    <button type="button" class="button">
+                                        <h4 class="h4">38(24.0cm)</h4>
+                                    </button>
+                                    <button type="button" class="button">
+                                        <h4 class="h4">39(24.5cm)</h4>
+                                    </button>
+                                    <button type="button" class="button">
+                                        <h4 class="h4">40(25.0cm)</h4>
+                                    </button>
+                                    <button type="button" class="button">
+                                        <h4 class="h4">41(26.0cm)</h4>
+                                    </button>
+                                    <button type="button" class="button" disabled>
+                                        <h4 class="sold-out h4">42(26.5cm)</h4>
+                                    </button>
+                                    <button type="button" class="button" disabled>
+                                        <h4 class="sold-out h4">43(27.0cm)</h4>
+                                    </button>
+                                </div>
+                                <p class="sm color-danger p">僅剩 3 雙</p>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper d-flex gap-8">
+                            <div class="button d-flex justify-center align-center light py-12 d-sm-none">
+                                <i class="bi bi-heart mr-8"></i>
+                                <h4 class="h4">加入收藏</h4>
+                            </div>
+                            <div class="button d-flex justify-center align-center dark py-12">
+                                <i class="bi bi-handbag mr-8"></i>
+                                <h4 class="h4">門市預約試穿</h4>
+                            </div>
+                            <div class="button d-none d-sm-block favorite">
+                                <i class="bi bi-heart"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="select-size">
-                        <p class="mb-8 p">尺寸</p>
-                        <div class="size-button d-flex mb-8">
-                            <button type="button" class="button mr-8 mb-8 focus">
-                                <h4 class="h4">35(22.5cm)</h4>
-                            </button>
-                            <button type="button" class="button mr-8 mb-8">
-                                <h4 class="h4">36(23.0cm)</h4>
-                            </button>
-                            <button type="button" class="button mb-8">
-                                <h4 class="h4">37(23.5cm)</h4>
-                            </button>
-                            <button type="button" class="button mr-8 mb-8">
-                                <h4 class="h4">38(24.0cm)</h4>
-                            </button>
-                            <button type="button" class="button mr-8 mb-8">
-                                <h4 class="h4">39(24.5cm)</h4>
-                            </button>
-                            <button type="button" class="button mb-8">
-                                <h4 class="h4">40(25.0cm)</h4>
-                            </button>
-                            <button type="button" class="button mr-8">
-                                <h4 class="h4">41(26.0cm)</h4>
-                            </button>
-                            <button type="button" class="button mr-8">
-                                <h4 class="sold-out h4">42(26.5cm)</h4>
-                            </button>
-                            <button type="button" class="button">
-                                <h4 class="sold-out h4">43(27.0cm)</h4>
-                            </button>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h4 class="mb-4 h4">商品材質</h4>
+                            <p class="p">鞋面：合成皮革（Synthetic Leather）<br>
+                            內裡：透氣網布材質，提升舒適與排汗性<br>
+                            鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果<br>
+                            鞋帶：聚酯纖維，耐拉扯不易鬆脫</p>
                         </div>
-                        <p class="sm color-danger p">僅剩 3 雙</p>
-                    </div>
-                </div>
-                <div class="btn-wrapper d-flex">
-                    <div class="button d-flex light mr-8">
-                        <i class="bi bi-heart"></i>
-                        <h4 class="h4">加入收藏</h4>
-                    </div>
-                    <div class="button d-flex dark">
-                        <i class="bi bi-handbag"></i>
-                        <h4 class="h4">門市預約試穿</h4>
+                        <div class="accordion-item">
+                            <h4 class="mb-4 h4">購買須知</h4>
+                            <p class="p">商品顏色因螢幕顯示可能略有差異，請以實品為準。<br>
+                            建議首次穿著前試穿確認尺寸，避免影響退換貨權益。<br>
+                            本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="mb-4 h4">保養方式</h4>
+                            <p class="p">建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。<br>
+                            收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。<br>
+                            若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="accordion">
-                <div class="accordion-item">
-                    <h4 class="mb-4 h4">商品材質</h4>
-                    <p class="p">鞋面：合成皮革（Synthetic Leather）<br>
-                    內裡：透氣網布材質，提升舒適與排汗性<br>
-                    鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果<br>
-                    鞋帶：聚酯纖維，耐拉扯不易鬆脫</p>
-                </div>
-                <div class="accordion-item">
-                    <h4 class="mb-4 h4">購買須知</h4>
-                    <p class="p">商品顏色因螢幕顯示可能略有差異，請以實品為準。<br>
-                    建議首次穿著前試穿確認尺寸，避免影響退換貨權益。<br>
-                    本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
-                </div>
-                <div class="accordion-item">
-                    <h4 class="mb-4 h4">保養方式</h4>
-                    <p class="p">建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。<br>
-                    收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。<br>
-                    若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
-                </div>
-            </div>
-        </div>
+        </div>  
     </main>
-    <section class="best-sell">
-        <div class="container">
+    <section class="best-sell py-48 py-sm-40">
+        <div class="container px-12">
             <div class="best-sell-title mb-16">
                 <h2 class="h2">你可能也喜歡...</h2>
             </div>
-            <div class="card-wrapper d-flex">
-                <div class="card mr-24">
+            <div class="card-wrapper d-flex row row-sm overflow-sm-auto">
+                <div class="card col-3">
                     <div class="card-image mb-12">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true" alt="">
                     </div>
@@ -157,7 +171,7 @@
                         <h4 class="h4">NT$2,600</h4>
                     </div>
                 </div>
-                <div class="card mr-24">
+                <div class="card col-3">
                     <div class="card-image mb-12">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true" alt="">
                     </div>
@@ -166,7 +180,7 @@
                         <h4 class="h4">NT$4,000</h4>
                     </div>
                 </div>
-                <div class="card mr-24">
+                <div class="card col-3">
                     <div class="card-image mb-12">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true" alt="">
                     </div>
@@ -175,7 +189,7 @@
                         <h4 class="h4">NT$3,200</h4>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card col-3">
                     <div class="card-image mb-12">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true" alt="">
                     </div>
@@ -189,28 +203,30 @@
     </section>
 
     <section class="section">
-        <div class="banner">
-            <h2 class="mr-24 h2">加入會員取得 9 折優惠</h2>
+        <div class="banner d-flex justify-center align-center py-24">
+            <h2 class="mr-24 h2 h3-sm mr-sm-16">加入會員取得 9 折優惠</h2>
             <button type="button" class="button">
                 <h4 class="h4">馬上註冊</h4>
             </button>
         </div>
     </section>
     <footer>
-        <div class="footer">
-           <div class="footer-container mb-24">
-                <div class="logo">
-                    <span class="logo-text">URBNSTEP</span>
-                    <div class="dot"></div>
+        <div class="footer py-64 py-sm-32 px-sm-12">
+           <div class="footer-container d-flex justify-between align-center flex-sm-column justify-sm-start align-sm-start px-12 px-sm-0">
+                <div class="logo mb-sm-8">
+                    <a href="./index.html" class="px-12 py-8">
+                        <span class="logo-text">URBNSTEP</span>
+                        <div class="dot"></div>
+                    </a>
                 </div>
-                <ul>
-                    <li class="mr-40"><a href="./productList.html">商品列表</a></li>
-                    <li><a href="./brandStory.html">品牌故事</a></li>
+                <ul class="d-flex flex-sm-column">
+                    <li class="mr-40 mr-sm-0 px-sm-12"><a href="./productList.html" class="py-12">商品列表</a></li>
+                    <li class="px-sm-12"><a href="./brandStory.html" class="py-12">品牌故事</a></li>
                 </ul>
             </div>
             <div class="copyright">
                 <div class="copyright-content">
-                    <p class="p">Copyright ©2025 URBNSTYLE</p>
+                    <p class="p mb-4">Copyright ©2025 URBNSTYLE</p>
                     <p class="p">All Rights Reserved.</p>    
                 </div>
                 
